@@ -31,7 +31,7 @@ private {
     import derelict.opengl3.types;
 }
 
-extern( System ) nothrow {
+extern( System ) nothrow @nogc {
     // OpenGL 1.0
     alias void function( GLenum ) da_glCullFace;
     alias void function( GLenum ) da_glFrontFace;

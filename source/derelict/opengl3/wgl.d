@@ -34,7 +34,7 @@ version( Windows ) {
         import derelict.util.wintypes;
     }
 
-    extern( Windows ) nothrow {
+    extern( Windows ) nothrow @nogc {
         alias da_wglCopyContext = BOOL function( void*,void* );
         alias da_wglCreateContext = void* function( void* );
         alias da_wglCreateLayerContext = void* function( void*,int );

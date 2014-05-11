@@ -77,7 +77,7 @@ struct _cl_context;
 struct _cl_event;
 
 // ARB_debug_output
-extern( System ) nothrow {
+extern( System ) nothrow @nogc {
     // ARB_debug_output
     alias GLDEBUGPROCARB = void function( GLenum, GLenum, GLuint, GLenum, GLsizei, in GLchar*, GLvoid* );
 

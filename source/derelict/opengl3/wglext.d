@@ -180,7 +180,7 @@ version( Windows ) {
 
     alias HPBUFFERARB = HANDLE;
 
-    extern( Windows ) nothrow {
+    extern( Windows ) nothrow @nogc {
         // WGL_ARB_extensions_string
         alias da_wglGetExtensionsStringARB = const( char* ) function( HDC );
 

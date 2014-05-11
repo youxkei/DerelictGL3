@@ -97,7 +97,7 @@ private __gshared bool _EXT_texture_filter_anisotropic;
 bool EXT_texture_filter_anisotropic() @property { return _EXT_texture_filter_anisotropic; }
 
 // GL_EXT_framebuffer_object
-extern(  System  ) nothrow {
+extern(  System  ) nothrow @nogc {
     alias da_glIsRenderbufferEXT = GLboolean function( GLuint );
     alias da_glBindRenderbufferEXT = void function( GLenum, GLuint );
     alias da_glDeleteRenderbuffersEXT = void function( GLsizei, in GLuint* );

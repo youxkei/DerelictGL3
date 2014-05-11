@@ -250,7 +250,7 @@ static if( Derelict_OS_Posix && !Derelict_OS_Mac ) {
     }
 
     // functions as types
-    extern( C ) nothrow {
+    extern( C ) nothrow @nogc {
         // function types
         alias void function() __GLXextFuncPtr;
 

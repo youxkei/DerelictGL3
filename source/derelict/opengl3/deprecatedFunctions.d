@@ -29,7 +29,7 @@ module derelict.opengl3.deprecatedFunctions;
 
 private import derelict.opengl3.types;
 
-extern( System ) nothrow {
+extern( System ) nothrow @nogc {
     // 1.0 & 1.1 Deprecated functions
     alias da_glIsList = GLboolean function( GLuint );
     alias da_glDeleteLists = void function( GLuint,GLsizei );
